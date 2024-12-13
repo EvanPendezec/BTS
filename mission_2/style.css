@@ -1,0 +1,38 @@
+
+/* Bordure bleue autour de la table */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Fusionne les bordures adjacentes */
+    border: 3px solid blue; /* Définit une bordure bleue de 3px d'épaisseur */
+}
+
+/* Bordure bleue autour des cellules de la table */
+td, th {
+    border: 1px solid blue; /* Bordure bleue de 1px autour des cellules */
+    padding: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+img {
+    width: 150px; /* Ajustez la taille de l'image comme nécessaire */
+    height: auto;
+    border-radius: 50%; /* Rend l'image ronde */
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}

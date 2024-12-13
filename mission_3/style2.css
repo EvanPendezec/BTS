@@ -1,0 +1,60 @@
+body {
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+}
+
+.business-card {
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    width: 300px; 
+    text-align: center; 
+}
+
+h1 {
+    font-size: 24px; 
+    color: #333; }
+
+h2 {
+    font-size: 18px; 
+    color: #666; 
+    margin: 5px 0 15px; 
+}
+
+p {
+    font-size: 14px; 
+    color: #444; 
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin: 0 10px; 
+}
+
+.social-links img {
+    width: 30px; 
+    height: 30px; 
+}
+
+.button {
+    display: inline-block; 
+    background-color: #007BFF; 
+    color: white; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    margin: 10px; 
+}
+
+.button:hover {
+    background-color: #0056b3; 
+}

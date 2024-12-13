@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    margin: 0;
+
+    font-family: 'Permanent Marker', cursive;
+    background-color: #f0f0f0; 
+    color: rgb(243, 159, 62); 
+
+  
+
+        background-image: url('cyber_main.gif'); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center;     
+}
+
+a {
+    color: #ffde97; 
+    
+    
+}
+
+a:hover {
+    text-decoration: underline; 
+    text-transform:uppercase;
+    text-decoration-color: rgb(240, 138, 42);
+    
+}
+
+.block1 {
+    backdrop-filter: blur(10px);
+    height: 450px;
+    width: 200px;
+    margin: 20px;
+    border: 5px solid rgb(245, 245, 220); 
+    border-radius: 8px;
+   
+    box-shadow: 
+        0 0 5px rgb(245, 245, 220),
+        0 0 10px rgb(245, 245, 220),
+        0 0 15px rgb(245, 245, 220);
+}

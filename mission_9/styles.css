@@ -1,0 +1,35 @@
+div {
+
+    border: 2px solid #b5990d; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(229, 190, 19, 0.73);
+    
+    width: 750px;
+    height: 200px;
+    
+    margin: 70px 0; 
+   
+    background-color: #166494;
+    
+}
+
+li { 
+    list-style: none;
+}
+
+
+button {
+    border-radius: 10px;
+    border: 2px solid #b5990d;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(179, 179, 179);
+}
+
+button:hover { 
+    background-color: #4ea3d8;
+}
+
+label.true {
+    color: red;
+}

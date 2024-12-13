@@ -1,0 +1,228 @@
+<<<<<<< HEAD
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  header {
+    background-color: #f64242;
+    color: rgb(248, 248, 248);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 10px 10px rgb(255, 110, 110);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem; 
+  }
+  
+  header p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .hidden { 
+    display: none;
+  }
+
+  .solution, .demonstration {
+
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+
+  }
+
+
+
+  .exercices h2 {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .exercice {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ffa200;
+    box-shadow: 0 4px 10px rgb(202, 149, 14);
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+  
+  .exercice h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #ff7272;
+  }
+  
+  .exercice p {
+    margin: 10px 0;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #f75656;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  button:hover {
+    background-color: #ffbc03;
+    box-shadow: 0 4px 10px rgb(255, 196, 45);
+  }
+  
+  footer {
+    background-color: #c20202;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+=======
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  header {
+    background-color: #f64242;
+    color: rgb(248, 248, 248);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 10px 10px rgb(255, 110, 110);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem; 
+  }
+  
+  header p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .hidden { 
+    display: none;
+  }
+
+  .solution, .demonstration {
+
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+
+  }
+
+
+
+  .exercices h2 {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .exercice {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ffa200;
+    box-shadow: 0 4px 10px rgb(202, 149, 14);
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+  
+  .exercice h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #ff7272;
+  }
+  
+  .exercice p {
+    margin: 10px 0;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #f75656;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  button:hover {
+    background-color: #ffbc03;
+    box-shadow: 0 4px 10px rgb(255, 196, 45);
+  }
+  
+  footer {
+    background-color: #c20202;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+>>>>>>> 681d3a5d732ba1c0accea9d5e292c300ef03dc16
+  

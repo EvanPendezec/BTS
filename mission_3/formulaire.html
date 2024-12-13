@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   <table style="border-collapse: collapse; width: 100%; border: 2px solid black;">
+       <tr> <td colspan="10"><h1>Formulaire d'inscription </h1></td></tr>
+       
+       
+       
+        <tr>
+
+            
+            <td style="border: 0; padding: 10px;">
+                
+                <label for="nom">Pseudo</label><br>
+                 <label for="mot_de_passe">Mot de passe</label><br>
+                 <label for="tel">Prénom</label><br>
+                 <label for="email">E-mail:</label><br>
+                  <label for="avatar">Avatar</label><br>
+                <label for="Pay">Pays</label><br>
+                <label for="fruits">Quels sont vos fruits préférés ?</label><br>
+                <label for="option1">Civilité</label><br>
+                
+                <label for="Ville">Ville</label><br>
+                <label for="Code_postal">Code postal</label><br>
+                <label for="dob">Date de naissance :</label><br>
+                <label for="jauge">Jauge</label><br>
+                <label for="telephone">Numéro de téléphone :</label>
+                <label for="recherche">Recherche :</label><br>
+              <label for="url">URL :</label><br>  
+              <label for="couleur">Couleur</label><br>
+              
+              <input type="color" id="couleur" name="couleur" value="#000000"><br>
+    
+               
+            </td>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <td style="border: 0; padding: 10px;">
+                <input type="text" id="nom" name="nom" required placeholder="Entrez votre pseudo"><br> 
+                <input type="password" id="text" name="t2" required placeholder="Entrez votre mot de passe"><br>
+                <input type="text" id="prenom" name="prenom" required placeholder="Entrez votre prénom"><br>
+                <input type="email" id="email" name="email" required placeholder="Entrez votre e-mail"><br>
+                <input type="file" id="avatar" name="avatar" accept="image/*" required><br>
+                <select id="Pays">
+                    <option value="" disabled selected>Sélectionnez votre pays</option>
+                    <option value="Espagne">Espagne</option>
+                    <option value="France">France</option>
+                    <option value="Italie">Italie</option>
+                    <option value="Allemagne">Allemagne</option>
+                </select><br>
+                <input type="checkbox" id="fruit1" name="fruits" value="orange">
+                <label for="fruit1">Orange</label>
+                
+                <input type="checkbox" id="fruit2" name="fruits" value="fraise">
+                <label for="fruit2">Fraise</label>
+                
+                <input type="checkbox" id="fruit3" name="fruits" value="poire">
+                <label for="fruit3">Poire</label><br>
+                
+                <input type="radio" id="Homme" name="choix" value="Homme">
+                <label for="Homme">Homme</label>
+                
+                <input type="radio" id="Femme" name="choix" value="Femme">
+                <label for="Femme">Femme</label><br>
+                
+                <input type="text" id="Ville" name="Ville" required placeholder="Entrez votre ville"><br>
+                <input type="text" id="Code_postal" name="Code_postal" required placeholder="Entrez votre code postal"><br>
+                <input type="date" id="dob" name="dob" required><br>
+                <input type="range" id="jauge" name="jauge" min="0" max="100" value="50"> <br>
+                <input type="tel" id="telephone" name="telephone" required pattern="[0-9]{10}" placeholder="Entrez votre numéro de téléphone"><br>
+                <input type="search" id="recherche" name="recherche" placeholder="Recherche..."><br>
+                <input type="url" id="url" name="url" placeholder="Entrez l'URL"><br>
+                <input type="color" id="couleur" name="couleur" value="#000000"><br>
+            </td>
+            
+    
+
+<a href="index.html">Retour à l'accueil</a>
+</body>
+</html>

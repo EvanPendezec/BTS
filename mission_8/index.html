@@ -1,0 +1,1657 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banque d'Exercices JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Banque d'Exercices JavaScript</h1>
+    <p>
+      Sur cette page, vous allez pouvoir apprendre Javascript, et testez des codes. 
+    </p>
+  </header>
+
+
+
+
+
+  <main>
+    <section class="exercices">
+      <h2>Exercices Disponibles</h2>
+      <div class="exercice">
+        <h3>1. Somme de deux nombre</h3>
+        <p>Ecrivez une fonction qui prend deux entiers en entrée et retourne leur somme</p>
+        <div class="buttons">
+
+          <button  onclick="afficherTexte()"  class="show-solution">Voir la solution</button>
+
+          <p id="texte" class="hidden">Voici la solution </p>
+
+          <button onclick="Demo_1()" id="addition" class="show-demonstration">Voir la démonstration</button>
+          
+
+         
+          
+        </div>
+
+      <div id="solution" class="hidden">
+        <p>Solution :   </p> <br> <p> function addition(){ <br>
+          var a = document.getElementById("t1").value; <br>
+          var b = document.getElementById("t2").value; <br>
+          var c = Number(a)+Number(b); <br> <br>
+      
+          t3.value = c; <br> <br>
+      
+      }</p>
+      </div>
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration : </p>
+      </div>
+    </div>
+
+
+
+
+
+<!-- Exercice 2 -->
+
+
+
+
+
+
+
+
+
+
+
+      <div class="exercice">
+        <h3>2. Pair ou Impair</h3>
+        <p>Ecrivez une fonction qui verifié si un nomnre est pair ou impair.</p>
+        <div class="buttons">
+
+
+          <button  onclick="afficherTexte2()"  class="show-solution">Voir la solution</button>
+
+          
+          
+
+
+          <button onclick="Demo_2()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+          </div>
+
+          <div id="solution2" class="hidden">
+          <p> Solution : <br><br>
+          
+            function Demo_2() {<br>
+              let proceed = confirm("Voulez-vous vérifier si un nombre est pair ou impair ?");<br>
+              if (proceed) {<br>
+                  let number = parseInt(prompt("Entrez un nombre :"));<br>
+                  if (!isNaN(number)) {<br>
+                      alert(number % 2 === 0 ? "Le nombre est pair." : "Le nombre est impair.");<br>
+                  } else {<br>
+                      alert("Veuillez entrer un nombre valide.");<br>
+                  }<br>
+              } else {<br>
+                  alert("Opération annulée.");<br>
+              }<br>
+          }</p></div>
+
+          <div id="solution" class="hidden">
+            <p> Voici la démonstration </p>
+
+
+        </div>
+      </div>
+
+
+
+
+      <!--Exercice 3-->
+
+
+
+
+
+      <div class="exercice">
+        <h3>3. multiplication</h3>
+        <p>Faites une multiplication entre deux nombres.</p>
+        <div class="buttons">
+
+
+          <button  onclick="afficherTexte3()"  class="show-solution">Voir la solution</button>
+
+          <button onclick="Demo_3()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+          </div>
+
+
+         <div id="solution3" class="hidden">
+      <p> Solution : <br><br>
+
+        function Demo_3() {
+          var proceed = confirm("Voulez-vous faire une multiplication ?");<br>
+          if (proceed) {<br>
+              var num1 = prompt("Entrez le premier nombre :");<br>
+              var num2 = prompt("Entrez le deuxième nombre :");<br>
+              num1 = parseFloat(num1);<br>
+              num2 = parseFloat(num2);<br>
+              if (!isNaN(num1) && !isNaN(num2)) {<br>
+                  alert("Le résultat de la multiplication est : " + (num1 * num2));<br>
+              } else {<br>
+                  alert("Veuillez entrer des nombres valides.");<br>
+              }<br>
+          } else {<br>
+              alert("Multiplication annulée.");<br>
+          }<br>
+      }
+      
+      
+      </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+      <!--Exercice 4-->
+
+
+
+
+
+
+      
+
+      <div class="exercice">
+      <h3>4.Conversion Celsius-Fahrenheit</h3>
+      <p>Réaliser un calcul pour convertir des celsius en Fahrenheit.</p>
+      <div class="buttons">
+
+
+        <button  onclick="afficherTexte4()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+        <button onclick="Demo_4()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+      </div>
+
+      <div id="solution4" class="hidden">
+      <p> Solution :<br><br>
+
+        function Demo_4() {<br>
+          var proceed = confirm("Voulez-vous convertir une température de Celsius en Fahrenheit ?");<br>
+          if (proceed) {<br>
+              var celsius = prompt("Entrez la température en Celsius :");<br>
+              celsius = parseFloat(celsius);<br>
+              if (!isNaN(celsius)) {<br>
+                  var fahrenheit = (celsius * 9 / 5) + 32;<br>
+                  alert("La température en Fahrenheit est : " + fahrenheit);<br>
+              } else {<br>
+                  alert("Veuillez entrer un nombre valide.");<br>
+              }<br>
+          } else {<br>
+              alert("Conversion annulée.");<br>
+          }<br>
+      }
+      
+      </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+    <!--Exercice 5-->
+
+    <div class="exercice">
+    <h3>5. Vérifier un mot clé </h3>
+    <p>Exécutez une recherche dans un phrase pour voir si un mot spécifique est présent. </p>
+    <div class="buttons">
+
+      <button  onclick="afficherTexte5()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_5()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution5" class="hidden">
+      <p> Solution :<br><br>
+
+        function Demo_5() {<br>
+          var proceed = confirm("Voulez-vous vérifier si une phrase contient un mot spécifique ?");<br>
+          if (proceed) {<br>
+              var phrase = prompt("Entrez une phrase :");<br>
+              var mot = prompt("Entrez le mot à rechercher :");<br>
+              if (phrase.includes(mot)) {<br>
+                  alert("Le mot '" + mot + "' est présent dans la phrase.");<br>
+              } else {<br>
+                  alert("Le mot '" + mot + "' n'est pas présent.");<br>
+              }<br>
+          } else {<br>
+              alert("Vérification annulée.");<br>
+          }<br>
+      }
+      
+         </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!--Exercice 6-->
+
+
+
+
+
+  <div class="exercice">
+  <h3>6.Trouvez le plus grand nombre</h3>
+  <p>Utilsez une fonction pour trouvez le plus grand nombre</p>
+  <div class="buttons">
+
+
+
+     <button  onclick="afficherTexte6()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_6()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution6" class="hidden">
+      <p> Solution : <br><br>
+
+        function Demo_6() {<br>
+          var proceed = confirm("Voulez-vous trouver le plus grand de deux nombres ?");<br>
+          if (proceed) {<br>
+              var num1 = prompt("Entrez le premier nombre :");<br>
+              var num2 = prompt("Entrez le deuxième nombre :");<br>
+              num1 = parseFloat(num1);<br>
+              num2 = parseFloat(num2);<br>
+              if (!isNaN(num1) && !isNaN(num2)) {<br>
+                  var max = Math.max(num1, num2);<br>
+                  alert("Le plus grand nombre est : " + max);<br>
+              } else {<br>
+                  alert("Veuillez entrer des nombres valides.");<br>
+              }<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+          }<br>
+      }<br>
+
+
+      </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<!--Exercice 7-->
+
+
+
+
+
+
+
+
+
+
+<div class="exercice">
+<h3>7.Compter jusqu'a 10 </h3>
+<p>Faites une suite de chiffre jusqu'a 10</p>
+<div class="buttons">
+  <button  onclick="afficherTexte7()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+  <button onclick="Demo_7()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+  </div>
+
+  <div id="solution7" class="hidden">
+  <p> Solution : <br>
+    <br>
+
+
+    function Demo_7() {<br>
+
+      var proceed = confirm("Voulez-vous compter jusqu'à 10 ?");<br>
+      if (proceed) {<br>
+          var result = "";<br>
+          for (var i = 1; i <= 10; i++) {<br>
+              result += i + " ";<br>
+          }<br>
+          alert("Voici les nombres de 1 à 10 : " + result);<br>
+      } else {<br>
+          alert("Opération annulée.");<br>
+      }<br>
+  }
+  
+
+
+  </p></div>
+
+  <div id="solution" class="hidden">
+    <p> Voici la démonstration </p>
+
+
+</div>
+</div>
+
+
+
+
+
+<!--Exercice 8-->
+
+
+
+
+
+
+
+
+
+
+<div class="exercice">
+<h3>8.Table de multiplication</h3>
+<p>Créez une méthode qui génère et affiche la table de multiplication d’un nombre donné.</p>
+<div class="buttons">
+
+  <button  onclick="afficherTexte8()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_8()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution8" class="hidden">
+      <p> Solution : <br><br>
+
+        function Demo_8() {<br>
+          var proceed = confirm("Voulez-vous afficher une table de multiplication ?");<br>
+          if (proceed) {<br>
+              var n = prompt("Entrez un nombre :");<br>
+              n = parseInt(n);<br>
+              if (!isNaN(n)) {<br>
+                  var result = "";<br>
+                  for (var i = 1; i <= 10; i++) {<br>
+                      result += n + " x " + i + " = " + (n * i) + "\n";<br>
+                  }<br>
+                  alert(result);<br>
+              } else {<br>
+                  alert("Veuillez entrer un nombre valide.");<br>
+              }<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+      }<br>
+
+
+      </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!--Exercice 9-->
+
+
+
+
+
+<div class="exercice">
+<h3>9.Sommes des nombres de 1 à N </h3>
+<p>Faites des calculs avec une suite de chiffre </p>
+<div class="buttons">
+
+  <button  onclick="afficherTexte9()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_9()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution9" class="hidden">
+      <p> Solution : <br> <br>
+        
+        function Demo_9() { <br>
+          var proceed = confirm("Voulez-vous calculer la somme des nombres de 1 à N ?"); <br>
+          if (proceed) { <br>
+              var N = prompt("Entrez un nombre N :"); <br>
+              N = parseInt(N); <br>
+              if (!isNaN(N)) { <br>
+                  var sum = 0; <br>
+                  for (var i = 1; i <= N; i++) { <br>
+                      sum += i; <br>
+                  } <br>
+                  alert("La somme des nombres de 1 à " + N + " est : " + sum); <br>
+              } else { <br>
+                  alert("Veuillez entrer un nombre valide."); <br>
+              } <br>
+          } else { <br>
+              alert("Opération annulée."); <br>
+          }
+      }</p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<!--Exercice 10-->
+
+
+
+
+
+
+
+<div class="exercice">
+<h3>10.Longueur d'une chaine</h3>
+<p>Ecrivez une fonction pour connaitre la longueur d'une chaine de caractère.</p>
+<div class="buttons">
+
+  <button  onclick="afficherTexte10()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_10()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution10" class="hidden">
+      <p> Solution :<br><br>
+        
+        function Demo_10() {<br>
+          var proceed = confirm("Voulez-vous connaître la longueur d'une chaîne de caractères ?");<br>
+          if (proceed) {<br>
+              var texte = prompt("Entrez une chaîne de caractères :");<br>
+              alert("La longueur de la chaîne est : " + texte.length);<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+          }<br>
+      }</p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+<!--Exercice 11-->
+
+
+
+
+
+
+
+<div class="exercice">
+<h3>11.Nombre aléatoire</h3>
+<p>Utilisez une fonction pour faire apparaitre un nombre aléatoire</p>
+<div class="buttons">
+
+  <button  onclick="afficherTexte11()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_11()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution11" class="hidden">
+      <p> Solution :<br><br>
+        
+        function Demo() {<br>
+          var proceed = confirm("Voulez-vous générer un nombre aléatoire entre 1 et 100 ?");<br>
+          if (proceed) {<br>
+              var randomNumber = Math.floor(Math.random() * 100) + 1;<br>
+              alert("Le nombre aléatoire généré est : " + randomNumber);<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+          }
+      }</p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+<!--Exercice 12-->
+
+
+
+
+
+
+<div class="exercice">
+<h3>12.Inversez une chaine </h3>
+<p>Utilisez une fonction pour inverser une chaine de caractères</p>
+<div class="buttons">
+
+   <button  onclick="afficherTexte12()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_12()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution12" class="hidden">
+      <p> Solution :<br><br>
+        
+        function Demo() {<br>
+          var proceed = confirm("Voulez-vous inverser une chaîne de caractères ?");<br>
+          if (proceed) {<br>
+              var str = prompt("Entrez une chaîne :");<br>
+              var reversed = str.split('').reverse().join('');<br>
+              alert("La chaîne inversée est : " + reversed);<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+          }<br>
+      }
+      </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+<!--Exercice 13-->
+
+
+
+
+
+
+
+<div class="exercice">
+<h3>13. Afficher les voyelles</h3>
+<p>Faites apparaitre les voyelles  </p>
+<div class="buttons">
+
+
+  <button  onclick="afficherTexte13()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_13()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution13" class="hidden">
+      <p> Solution : <br><br>
+
+        function Demo() {<br>
+          var proceed = confirm("Voulez-vous afficher les voyelles d'une chaîne ?");<br>
+          if (proceed) {<br>
+              var texte = prompt("Entrez une chaîne de caractères :");<br>
+              var voyelles = texte.match(/[aeiouy]/gi);<br>
+              alert("Les voyelles sont : " + (voyelles ? voyelles.join('') : "aucune voyelle trouvée."));<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+          }<br>
+      }
+      
+      </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+<!--Exercice 14-->
+
+
+
+
+
+<div class="exercice">
+<h3>14. Vérifier une élément dans un tableau </h3>
+<p>Implémentez une méthode qui convertit une température en degrés Celsius en Fahrenheit et vice versa.</p>
+<div class="buttons">
+
+
+  <button  onclick="afficherTexte14()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_14()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution14" class="hidden">
+      <p> Solution :<br><br>
+        
+        function Demo() {<br>
+          var proceed = confirm("Voulez-vous vérifier si un élément est dans un tableau ?");<br>
+          if (proceed) {<br>
+              var fruits = ["pomme", "banane", "orange"];<br>
+              var fruit = prompt("Entrez un fruit :");<br>
+              if (fruits.includes(fruit)) {<br>
+                  alert(fruit + " est présent dans le tableau.");<br>
+              } else {<br>
+                  alert(fruit + " n'est pas présent.");<br>
+              }<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+          }
+      }</p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+<!--Exercice 15-->
+
+
+
+
+
+<div class="exercice">
+<h3>15.Nombre d'apparition d'un caractère</h3>
+<p>Créez une classe Etudiant avec des attributs comme nom, note. Écrivez un programme pour trier une liste d’étudiants par leur note en ordre décroissant.
+
+</p>
+<div class="buttons">
+
+   <button  onclick="afficherTexte15()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_15()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution15" class="hidden">
+      <p> Solution :  <br><br>
+        function Demo() {<br>
+          var proceed = confirm("Voulez-vous compter les occurrences d'un caractère dans une chaîne ?");<br>
+          if (proceed) {<br>
+              var phrase = prompt("Entrez une phrase :");<br>
+              var char = prompt("Entrez le caractère à chercher :");<br>
+              var count = phrase.split(char).length - 1;<br>
+              alert("Le caractère '" + char + "' apparaît " + count + " fois.");<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+          }<br>
+      } </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>  
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Créé par Pendezec Evan </p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banque d'Exercices JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Banque d'Exercices JavaScript</h1>
+    <p>
+      Sur cette page, vous allez pouvoir apprendre Javascript, et testez des codes. 
+    </p>
+  </header>
+
+
+
+
+
+  <main>
+    <section class="exercices">
+      <h2>Exercices Disponibles</h2>
+      <div class="exercice">
+        <h3>1. Somme de deux nombre</h3>
+        <p>Ecrivez une fonction qui prend deux entiers en entrée et retourne leur somme</p>
+        <div class="buttons">
+
+          <button  onclick="afficherTexte()"  class="show-solution">Voir la solution</button>
+
+          <p id="texte" class="hidden">Voici la solution </p>
+
+          <button onclick="Demo_1()" id="addition" class="show-demonstration">Voir la démonstration</button>
+          
+
+         
+          
+        </div>
+
+      <div id="solution" class="hidden">
+        <p>Solution :   </p> <br> <p> function addition(){ <br>
+          var a = document.getElementById("t1").value; <br>
+          var b = document.getElementById("t2").value; <br>
+          var c = Number(a)+Number(b); <br> <br>
+      
+          t3.value = c; <br> <br>
+      
+      }</p>
+      </div>
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration : </p>
+      </div>
+    </div>
+
+
+
+
+
+<!-- Exercice 2 -->
+
+
+
+
+
+
+
+
+
+
+
+      <div class="exercice">
+        <h3>2. Pair ou Impair</h3>
+        <p>Ecrivez une fonction qui verifié si un nomnre est pair ou impair.</p>
+        <div class="buttons">
+
+
+          <button  onclick="afficherTexte2()"  class="show-solution">Voir la solution</button>
+
+          
+          
+
+
+          <button onclick="Demo_2()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+          </div>
+
+          <div id="solution2" class="hidden">
+          <p> Solution : <br><br>
+          
+            function Demo_2() {<br>
+              let proceed = confirm("Voulez-vous vérifier si un nombre est pair ou impair ?");<br>
+              if (proceed) {<br>
+                  let number = parseInt(prompt("Entrez un nombre :"));<br>
+                  if (!isNaN(number)) {<br>
+                      alert(number % 2 === 0 ? "Le nombre est pair." : "Le nombre est impair.");<br>
+                  } else {<br>
+                      alert("Veuillez entrer un nombre valide.");<br>
+                  }<br>
+              } else {<br>
+                  alert("Opération annulée.");<br>
+              }<br>
+          }</p></div>
+
+          <div id="solution" class="hidden">
+            <p> Voici la démonstration </p>
+
+
+        </div>
+      </div>
+
+
+
+
+      <!--Exercice 3-->
+
+
+
+
+
+      <div class="exercice">
+        <h3>3. multiplication</h3>
+        <p>Faites une multiplication entre deux nombres.</p>
+        <div class="buttons">
+
+
+          <button  onclick="afficherTexte3()"  class="show-solution">Voir la solution</button>
+
+          <button onclick="Demo_3()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+          </div>
+
+
+         <div id="solution3" class="hidden">
+      <p> Solution : <br><br>
+
+        function Demo_3() {
+          var proceed = confirm("Voulez-vous faire une multiplication ?");<br>
+          if (proceed) {<br>
+              var num1 = prompt("Entrez le premier nombre :");<br>
+              var num2 = prompt("Entrez le deuxième nombre :");<br>
+              num1 = parseFloat(num1);<br>
+              num2 = parseFloat(num2);<br>
+              if (!isNaN(num1) && !isNaN(num2)) {<br>
+                  alert("Le résultat de la multiplication est : " + (num1 * num2));<br>
+              } else {<br>
+                  alert("Veuillez entrer des nombres valides.");<br>
+              }<br>
+          } else {<br>
+              alert("Multiplication annulée.");<br>
+          }<br>
+      }
+      
+      
+      </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+      <!--Exercice 4-->
+
+
+
+
+
+
+      
+
+      <div class="exercice">
+      <h3>4.Conversion Celsius-Fahrenheit</h3>
+      <p>Réaliser un calcul pour convertir des celsius en Fahrenheit.</p>
+      <div class="buttons">
+
+
+        <button  onclick="afficherTexte4()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+        <button onclick="Demo_4()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+      </div>
+
+      <div id="solution4" class="hidden">
+      <p> Solution :<br><br>
+
+        function Demo_4() {<br>
+          var proceed = confirm("Voulez-vous convertir une température de Celsius en Fahrenheit ?");<br>
+          if (proceed) {<br>
+              var celsius = prompt("Entrez la température en Celsius :");<br>
+              celsius = parseFloat(celsius);<br>
+              if (!isNaN(celsius)) {<br>
+                  var fahrenheit = (celsius * 9 / 5) + 32;<br>
+                  alert("La température en Fahrenheit est : " + fahrenheit);<br>
+              } else {<br>
+                  alert("Veuillez entrer un nombre valide.");<br>
+              }<br>
+          } else {<br>
+              alert("Conversion annulée.");<br>
+          }<br>
+      }
+      
+      </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+    <!--Exercice 5-->
+
+    <div class="exercice">
+    <h3>5. Vérifier un mot clé </h3>
+    <p>Exécutez une recherche dans un phrase pour voir si un mot spécifique est présent. </p>
+    <div class="buttons">
+
+      <button  onclick="afficherTexte5()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_5()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution5" class="hidden">
+      <p> Solution :<br><br>
+
+        function Demo_5() {<br>
+          var proceed = confirm("Voulez-vous vérifier si une phrase contient un mot spécifique ?");<br>
+          if (proceed) {<br>
+              var phrase = prompt("Entrez une phrase :");<br>
+              var mot = prompt("Entrez le mot à rechercher :");<br>
+              if (phrase.includes(mot)) {<br>
+                  alert("Le mot '" + mot + "' est présent dans la phrase.");<br>
+              } else {<br>
+                  alert("Le mot '" + mot + "' n'est pas présent.");<br>
+              }<br>
+          } else {<br>
+              alert("Vérification annulée.");<br>
+          }<br>
+      }
+      
+         </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!--Exercice 6-->
+
+
+
+
+
+  <div class="exercice">
+  <h3>6.Trouvez le plus grand nombre</h3>
+  <p>Utilsez une fonction pour trouvez le plus grand nombre</p>
+  <div class="buttons">
+
+
+
+     <button  onclick="afficherTexte6()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_6()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution6" class="hidden">
+      <p> Solution : <br><br>
+
+        function Demo_6() {<br>
+          var proceed = confirm("Voulez-vous trouver le plus grand de deux nombres ?");<br>
+          if (proceed) {<br>
+              var num1 = prompt("Entrez le premier nombre :");<br>
+              var num2 = prompt("Entrez le deuxième nombre :");<br>
+              num1 = parseFloat(num1);<br>
+              num2 = parseFloat(num2);<br>
+              if (!isNaN(num1) && !isNaN(num2)) {<br>
+                  var max = Math.max(num1, num2);<br>
+                  alert("Le plus grand nombre est : " + max);<br>
+              } else {<br>
+                  alert("Veuillez entrer des nombres valides.");<br>
+              }<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+          }<br>
+      }<br>
+
+
+      </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<!--Exercice 7-->
+
+
+
+
+
+
+
+
+
+
+<div class="exercice">
+<h3>7.Compter jusqu'a 10 </h3>
+<p>Faites une suite de chiffre jusqu'a 10</p>
+<div class="buttons">
+  <button  onclick="afficherTexte7()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+  <button onclick="Demo_7()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+  </div>
+
+  <div id="solution7" class="hidden">
+  <p> Solution : <br>
+    <br>
+
+
+    function Demo_7() {<br>
+
+      var proceed = confirm("Voulez-vous compter jusqu'à 10 ?");<br>
+      if (proceed) {<br>
+          var result = "";<br>
+          for (var i = 1; i <= 10; i++) {<br>
+              result += i + " ";<br>
+          }<br>
+          alert("Voici les nombres de 1 à 10 : " + result);<br>
+      } else {<br>
+          alert("Opération annulée.");<br>
+      }<br>
+  }
+  
+
+
+  </p></div>
+
+  <div id="solution" class="hidden">
+    <p> Voici la démonstration </p>
+
+
+</div>
+</div>
+
+
+
+
+
+<!--Exercice 8-->
+
+
+
+
+
+
+
+
+
+
+<div class="exercice">
+<h3>8.Table de multiplication</h3>
+<p>Créez une méthode qui génère et affiche la table de multiplication d’un nombre donné.</p>
+<div class="buttons">
+
+  <button  onclick="afficherTexte8()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_8()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution8" class="hidden">
+      <p> Solution : <br><br>
+
+        function Demo_8() {<br>
+          var proceed = confirm("Voulez-vous afficher une table de multiplication ?");<br>
+          if (proceed) {<br>
+              var n = prompt("Entrez un nombre :");<br>
+              n = parseInt(n);<br>
+              if (!isNaN(n)) {<br>
+                  var result = "";<br>
+                  for (var i = 1; i <= 10; i++) {<br>
+                      result += n + " x " + i + " = " + (n * i) + "\n";<br>
+                  }<br>
+                  alert(result);<br>
+              } else {<br>
+                  alert("Veuillez entrer un nombre valide.");<br>
+              }<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+      }<br>
+
+
+      </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!--Exercice 9-->
+
+
+
+
+
+<div class="exercice">
+<h3>9.Sommes des nombres de 1 à N </h3>
+<p>Faites des calculs avec une suite de chiffre </p>
+<div class="buttons">
+
+  <button  onclick="afficherTexte9()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_9()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution9" class="hidden">
+      <p> Solution : <br> <br>
+        
+        function Demo_9() { <br>
+          var proceed = confirm("Voulez-vous calculer la somme des nombres de 1 à N ?"); <br>
+          if (proceed) { <br>
+              var N = prompt("Entrez un nombre N :"); <br>
+              N = parseInt(N); <br>
+              if (!isNaN(N)) { <br>
+                  var sum = 0; <br>
+                  for (var i = 1; i <= N; i++) { <br>
+                      sum += i; <br>
+                  } <br>
+                  alert("La somme des nombres de 1 à " + N + " est : " + sum); <br>
+              } else { <br>
+                  alert("Veuillez entrer un nombre valide."); <br>
+              } <br>
+          } else { <br>
+              alert("Opération annulée."); <br>
+          }
+      }</p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<!--Exercice 10-->
+
+
+
+
+
+
+
+<div class="exercice">
+<h3>10.Longueur d'une chaine</h3>
+<p>Ecrivez une fonction pour connaitre la longueur d'une chaine de caractère.</p>
+<div class="buttons">
+
+  <button  onclick="afficherTexte10()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_10()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution10" class="hidden">
+      <p> Solution :<br><br>
+        
+        function Demo_10() {<br>
+          var proceed = confirm("Voulez-vous connaître la longueur d'une chaîne de caractères ?");<br>
+          if (proceed) {<br>
+              var texte = prompt("Entrez une chaîne de caractères :");<br>
+              alert("La longueur de la chaîne est : " + texte.length);<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+          }<br>
+      }</p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+<!--Exercice 11-->
+
+
+
+
+
+
+
+<div class="exercice">
+<h3>11.Nombre aléatoire</h3>
+<p>Utilisez une fonction pour faire apparaitre un nombre aléatoire</p>
+<div class="buttons">
+
+  <button  onclick="afficherTexte11()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_11()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution11" class="hidden">
+      <p> Solution :<br><br>
+        
+        function Demo() {<br>
+          var proceed = confirm("Voulez-vous générer un nombre aléatoire entre 1 et 100 ?");<br>
+          if (proceed) {<br>
+              var randomNumber = Math.floor(Math.random() * 100) + 1;<br>
+              alert("Le nombre aléatoire généré est : " + randomNumber);<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+          }
+      }</p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+<!--Exercice 12-->
+
+
+
+
+
+
+<div class="exercice">
+<h3>12.Inversez une chaine </h3>
+<p>Utilisez une fonction pour inverser une chaine de caractères</p>
+<div class="buttons">
+
+   <button  onclick="afficherTexte12()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_12()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution12" class="hidden">
+      <p> Solution :<br><br>
+        
+        function Demo() {<br>
+          var proceed = confirm("Voulez-vous inverser une chaîne de caractères ?");<br>
+          if (proceed) {<br>
+              var str = prompt("Entrez une chaîne :");<br>
+              var reversed = str.split('').reverse().join('');<br>
+              alert("La chaîne inversée est : " + reversed);<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+          }<br>
+      }
+      </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+<!--Exercice 13-->
+
+
+
+
+
+
+
+<div class="exercice">
+<h3>13. Afficher les voyelles</h3>
+<p>Faites apparaitre les voyelles  </p>
+<div class="buttons">
+
+
+  <button  onclick="afficherTexte13()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_13()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution13" class="hidden">
+      <p> Solution : <br><br>
+
+        function Demo() {<br>
+          var proceed = confirm("Voulez-vous afficher les voyelles d'une chaîne ?");<br>
+          if (proceed) {<br>
+              var texte = prompt("Entrez une chaîne de caractères :");<br>
+              var voyelles = texte.match(/[aeiouy]/gi);<br>
+              alert("Les voyelles sont : " + (voyelles ? voyelles.join('') : "aucune voyelle trouvée."));<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+          }<br>
+      }
+      
+      </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+<!--Exercice 14-->
+
+
+
+
+
+<div class="exercice">
+<h3>14. Vérifier une élément dans un tableau </h3>
+<p>Implémentez une méthode qui convertit une température en degrés Celsius en Fahrenheit et vice versa.</p>
+<div class="buttons">
+
+
+  <button  onclick="afficherTexte14()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_14()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution14" class="hidden">
+      <p> Solution :<br><br>
+        
+        function Demo() {<br>
+          var proceed = confirm("Voulez-vous vérifier si un élément est dans un tableau ?");<br>
+          if (proceed) {<br>
+              var fruits = ["pomme", "banane", "orange"];<br>
+              var fruit = prompt("Entrez un fruit :");<br>
+              if (fruits.includes(fruit)) {<br>
+                  alert(fruit + " est présent dans le tableau.");<br>
+              } else {<br>
+                  alert(fruit + " n'est pas présent.");<br>
+              }<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+          }
+      }</p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>
+
+
+
+
+<!--Exercice 15-->
+
+
+
+
+
+<div class="exercice">
+<h3>15.Nombre d'apparition d'un caractère</h3>
+<p>Créez une classe Etudiant avec des attributs comme nom, note. Écrivez un programme pour trier une liste d’étudiants par leur note en ordre décroissant.
+
+</p>
+<div class="buttons">
+
+   <button  onclick="afficherTexte15()"  class="show-solution">Voir la solution</button>
+
+      
+      
+
+
+      <button onclick="Demo_15()" id="pair" class="show-demonstration">Voir la démonstration</button>
+
+
+      </div>
+
+      <div id="solution15" class="hidden">
+      <p> Solution :  <br><br>
+        function Demo() {<br>
+          var proceed = confirm("Voulez-vous compter les occurrences d'un caractère dans une chaîne ?");<br>
+          if (proceed) {<br>
+              var phrase = prompt("Entrez une phrase :");<br>
+              var char = prompt("Entrez le caractère à chercher :");<br>
+              var count = phrase.split(char).length - 1;<br>
+              alert("Le caractère '" + char + "' apparaît " + count + " fois.");<br>
+          } else {<br>
+              alert("Opération annulée.");<br>
+          }<br>
+      } </p></div>
+
+      <div id="solution" class="hidden">
+        <p> Voici la démonstration </p>
+
+
+    </div>
+  </div>  
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Créé par Pendezec Evan </p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
+>>>>>>> 681d3a5d732ba1c0accea9d5e292c300ef03dc16

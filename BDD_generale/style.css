@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+    margin: 0;
+
+    font-family: 'Fugaz One', static;
+    background-color: #f0f0f0; 
+    color: rgb(243, 159, 62); 
+
+  
+
+        background-image: url('miles__gif.gif'); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center;     
+}
+
+
+.box {
+    position: absolute; /* Permet de positionner la div précisément */
+    top: 50%; /* Positionne la div à 50% de la hauteur de la fenêtre */
+    left: 50%; /* Positionne la div à 50% de la largeur de la fenêtre */
+    transform: translate(-50%, -50%); /* Centre la div */
+    text-align: center; 
+    backdrop-filter: blur(10px); 
+    padding: 20px; 
+    border-radius: 5px; /* Arrondit les coins */
+    border: 2px solid rgba(255, 0, 0, 0.781); /* Ajoute une bordure */
+    transition: box-shadow 0.3s ease; /* Ajoute une transition pour box-shadow */
+}
+.box:hover {
+    box-shadow: 0 20px 20px rgba(255, 31, 1, 0.616);
+     
+    background :blur(2px);
+}
+
+.back {
+    position: absolute; /* ou relative, selon le contexte */
+    bottom: 0;
+    left: 0;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+
+.link {
+    color: white; /* Couleur par défaut du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Ajoute une transition */
+}
+
+.link:hover {
+    color: rgb(226, 76, 57); /* Couleur au survol */
+    text-shadow: 0 0 10px rgb(0, 0, 0); /* Ombre au survol */
+}
