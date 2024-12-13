@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    margin: 0;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f0f0f0; 
+    color: rgb(17, 238, 201); 
+
+  
+
+        background-image: url('cyber_main.gif'); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center;     
+}
+
+.main {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    height: 100vh; 
+
+    
+}
+
+.box {
+    position: absolute; 
+    right: 0; 
+    top: 50%; 
+    transform: translateY(-50%);
+    text-align: center; 
+    backdrop-filter: blur(10px);
+  
+    padding: 20px; 
+    border-radius: 5px; 
+    border: 2px solid rgb(17, 0, 255); 
+  ; 
+    transition: box-shadow 0.3s ease; 
+   
+  
+}
+
+.box:hover {
+    box-shadow: 0 20px 20px rgba(0, 243, 203, 0.616);
+     
+    background :blur(2px);
+}
+
+.link {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s ease, text-shadow 0.3s ease; 
+}
+
+.link:hover {
+    color: rgb(17, 0, 255); 
+    text-shadow: 0 0 10px rgb(0, 0, 0); 
+}
