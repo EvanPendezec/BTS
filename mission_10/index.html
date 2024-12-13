@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facture</title>
+    <link rel="stylesheet" href="styles.css">
+    <script charset="UTF-8" src="index.js"></script>
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="header">
+            <div class="company-info">
+                <h1>Nom de la compagnie</h1>
+                <p>Adresse postale</p>
+                <p>Détails du contact</p>
+            </div>
+            <div class="invoice-info">
+                <h2>FACTURE</h2>
+                <p>26/01/2023</p>
+                <p>Numéro de facture</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="details">
+                <div>
+                    <h3>Destinataire</h3>
+                    <p>Nom:</p>
+                    <p>Nom de la société:</p>
+                    <p>Adresse postale:</p>
+                    <p>Téléphone:</p>
+                    <p>Email:</p>
+                </div>
+                <div>
+                    <h3>Envoyez à</h3>
+                    <p>Nom:</p>
+                    <p>Nom de la société:</p>
+                    <p>Adresse postale:</p>
+                    <p>Téléphone:</p>
+                    <p>Email:</p>
+                </div>
+            </div>
+        </div>
+
+        <table id="dynamicTable" border="1">
+            <thead>
+                <tr>
+                    <th>DESCRIPTION</th>
+                    <th>QUANTITÉ</th>
+                    <th>PRIX UNITAIRE</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><textarea rows="1" cols="20">desc2</textarea></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><textarea rows="1" cols="20">desc2</textarea></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><textarea rows="1" cols="20">desc2</textarea></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><textarea rows="1" cols="20">desc2</textarea></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+
+
+
+
+
+
+
+               
+                    
+
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="totals">
+            <p>Sous-total: </p>
+            <textarea id="total" name="message" rows="4" cols="50"></textarea>
+            <p>Remise: </p>
+            <textarea id="remise" name="message" rows="4" cols="50"></textarea>
+            <p>Sous-total moins les remises: </p>
+            <textarea id="souos-total" name="message" rows="4" cols="50"></textarea>
+            <p>Taxe d'imposition: </p>
+            <textarea id="taxe" name="message" rows="4" cols="50"></textarea>
+            <p>Expédition, manutention: </p>
+            <textarea id= "expédition" name="message" rows="4" cols="50"></textarea>
+            <p class="total-due">Solde du: </p>
+            <textarea id="result" readonly rows="4" cols="50"></textarea>
+        </div>
+
+
+        <button onclick="ajout()">Ajouter une ligne</button>
+        <button onclick="Calculer()">Calculer</button>
+        <button onclick="Remplir()">Remplir automatiquement</button> 
+        <button onclick="Effacer()">Annulé</button> 
+        
+
+        <div class="footer">
+            <p>Remarques, notes et instructions de paiement</p>
+        </div>
+    </div>
+</body>
+</html>
